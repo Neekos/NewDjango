@@ -1,3 +1,31 @@
 body{
 	background-color: orange;
 }
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	height: 50px;
+}
+.a{
+	margin:5px;
+	width: 150px;
+	height: 35px;
+	border:1px solid white;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.a:hover{
+	background-color: white;
+	color: black;
+}
