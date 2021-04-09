@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-form .models import *
+# form .models import *
 
 # Create your views here.
 
-def index():
-	return render(request, 'blog/index.html')
+def index(request):
+	return render(request, 'blog/index.html', {'title':'Главная страница'})
