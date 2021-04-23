@@ -13,7 +13,13 @@ body{
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 	/*background-color: orange;*/
+}
+
+img{
+	max-width: 100%;
 }
 
 .none{
@@ -113,10 +119,10 @@ body{
 	box-shadow: 5px 5px 5px rgb(126,155,189, 0.8);
 }
 
-.card-img{
+/*.card-img{
 	margin-bottom: 20px;
 	max-width:500px;
-}
+}*/
 .card-title{
 	font-weight: 600;
 	font-size: 24px;
@@ -182,7 +188,7 @@ body{
 
 
 .iko{
-	width: 50px;
+	width: 40px;
 }
 
 .social p{
@@ -212,4 +218,83 @@ body{
 	padding: 15px;
 	text-decoration: none;
 	color: white;
+}
+
+
+/*adapti*/
+
+@media(max-width: 1152px){
+
+	.card{
+		max-width:calc(49% - 15px);
+	}
+}
+
+@media(max-width: 760px){
+	.header-title{
+		font-size: 36px;
+	}
+
+	.header-subtitle{
+		font-size: 9px;
+	}
+	.portfolio{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.portfolio-card-wraper{
+		justify-content: center;
+	}
+	.card{
+		max-width: 100%;
+		padding:15px;
+	}
+	.section-header{
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	.footer-row{
+		justify-content: center;
+
+	}
+	.card-title{
+		font-size: 16px;
+	}
+	.card p{
+		font-size: 12px;
+	}
+	.social p{
+		font-size: 12px;
+	}
+	.iko{
+		width: 20px;
+	}
+
+	.footer{
+	padding-top: 25px;
+	padding-bottom: 30px;
+		
+	}
+	.footer-copy-name{
+		
+		font-size: 18px;
+		margin-bottom: 10px;
+
+	}
+		.footer-copy p{
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.footer-row{
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	}
+
+	.col{
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
 }
