@@ -1,20 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>{{title}}</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
-	<!-- <script src="{% static 'blog/js/script.js' %}"></script> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet">
+	<title>Document</title>
 </head>
 <body>
+
 <div class="header">
-	<h1 class="header-name">
-		Neek
-	</h1>
-	<p class="header-subname">
-		disigner
-	</p>
-</div>
+		<h1 class="header-title">
+			Neek	
+		</h1>
+		<p1 class="header-subtitle">
+			Designer	
+		</p1>
+		<div class="header-arrow">
+			<img src="../../static/blog/images/2.png" alt="arrow" width="50px" height="50px">
+		</div>
+	</div>
+
 {% block menu %}
 <div class="menu">
 	<a href="/" class="a">Главная</a>
@@ -27,8 +35,44 @@
 {% block content%}
 {% endblock %}
 
-{% block footer %}
-<h1>Тут будет подвал</h1>
-{% endblock %}
+<div class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-copy col">
+					<div class="footer-copy-name">Neek</div>
+					<p class="footer-copy-p">Html-Верстка</p>
+				</div>
+				<div class="social col">
+					<p>Мои социальные сети:</p>
+					<div class="footer-icons">
+						<a href="#">
+							<img src="../../static/blog/images/vk.png" class="iko" alt="">	
+						</a>
+						<a href="#">
+							<img src="../../static/blog/images/inst.png" class="iko" alt="">	
+						</a>
+						<a href="#">
+							<img src="../../static/blog/images/git.png" class="iko" alt="">	
+						</a>
+						<a href="#">
+							<img src="../../static/blog/images/you.png" class="iko" alt="">	
+						</a>
+					</div>
+					
+				</div>
+
+				<div class="footer-contact col">
+					<a href="#" class="footer-btn">
+						связаться вконтакте
+					</a>
+					<p class="contanct-p">
+						Напишите мне что бы узнать <br>стоимость модели или проекта.
+					</p>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
 </body>
 </html>
