@@ -4,11 +4,17 @@
 <head>
 	<title>{{title}}</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+	<!-- <script src="{% static 'blog/js/script.js' %}"></script> -->
 </head>
 <body>
-{% block header %}
-<h1>Тут будет шапка</h1>
-{% endblock %}
+<div class="header">
+	<h1 class="header-name">
+		Neek
+	</h1>
+	<p class="header-subname">
+		disigner
+	</p>
+</div>
 {% block menu %}
 <div class="menu">
 	<a href="/" class="a">Главная</a>
